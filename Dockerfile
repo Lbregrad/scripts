@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install -y \
     bc \
     wget \
     curl \
+    neovim \
     libelf-dev \
     git \
     cpio \
