@@ -1,1 +1,1 @@
-docker run -it --name linux-builder -v $(pwd):/workspace linux-dev
+sudo docker run -it --rm   -v $(pwd):/workspace:Z   --user $(id -u):$(id -g)   linux-dev
