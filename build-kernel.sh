@@ -2,7 +2,7 @@
 set -e
 
 KERNEL_VERSION=${1:-6.9.7}
-KERNEL_DIR="sources/linux-$KERNEL_VERSION"
+KERNEL_DIR="../f_kernel/sources/linux-$KERNEL_VERSION"
 
 if [ ! -d "$KERNEL_DIR" ]; then
     echo "❌ Kernel source not found. Run fetch-kernel.sh first."

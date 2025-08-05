@@ -2,8 +2,8 @@
 set -e
 
 KERNEL_VERSION=${1:-6.9.7}
-mkdir -p sources
-cd sources
+mkdir -p ../f_kernel/sources
+cd ../sources
 
 if [ ! -d "linux-$KERNEL_VERSION" ]; then
     echo "📥 Downloading Linux kernel $KERNEL_VERSION..."
